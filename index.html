@@ -1,17 +1,131 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Пустой html5 шаблон</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-  <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cv</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-  <script src="js/scripts.js"></script>
-</body>
+  <header class = "header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#Profile" class="nav-link">Profile</a></li>
+          <li class="nav-item"><a href="#About me" class="nav-link">About me</a></li>
+          <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#Strengths" class="nav-link">Strengths</a></li>
+          <li class="nav-item"><a href="#Code" class="nav-link">Code</a></li>
+          <li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#Contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#Education" class="nav-link">Education</a></li>
+        </ul>
+      </nav>  
+    </div>
+  </header>
+  <main class = "main-container">
+    <div class="left-side">
+      <figure class="figure--left-side">
+        <img src="assets/img/i772.jpg" width="231" height="308" class="photo" alt="my photo">
+      </figure>
+      <section class="section" id="Contacts">
+        <h2 class="section-title">Contacts</h2>
+        <ul class="contact__list">
+          <li class="contact__item">
+        Discord: <br>
+        StepanKuzmin1997(StepanKuzmin1997)#1350
+          </li>
+          <li class="contact__item">
+        Email:<a href="mailto:stsiapan.kuzmin@gmail.com">stsiapan.kuzmin@gmail.com</a>
+          </li>
+          <li class="contact__item">
+        Address:<br>
+          <span>Gomel, Belarus</span>
+          </li>
+        </ul>
+      </section>
+      <section class="section" id="Education">
+        <h2 class="section-title">Education</h2>
+        <ul class="education__list">
+          <li class="education__item">
+            2013-2019 <br>Belorusian State University of Transport (BelSUT) -<br>
+            automation, telemechanics and communication
+          </li>
+          <li class="education__item">
+            2022 <br>English - A2.
+        </ul>
+      </section>
+    </div>
+    <div class="right-side">
+      <section class="section" id="Profile"><!-- справа-->
+        <section class="page-title">
+          <h1 class="main-title">Stepan <br>Kuzmin</h1>
+          <p>studying Front End development</p>
+        </section>
+      </section>
+      <section class="section" id="About me">
+         <h2 class="section-title">About me</h2>
+         <p>about me: I was born in 1997. Graduated from the Belarusian State University of Transport with a degree in automation, telemechanics and communications.
+          At the moment I am working on the Belarusian railway in my specialty. I am mastering the profession of Front End developer.
+            I speak English at A2 level. I strive to expand my horizons, including in programming. I approach work and study with responsibility, perseverance and dedication.</p>
+      </section>
+      <section class="section" id="Skills">
+        <h2 class="section-title">Skills</h2>
+        <ul class="skills__list">
+          <li>Engineering</li>
+          <li>Knowledge about ServiceNow administration.</li>
+          <li>Git</li>
+          <li>HTML/HTML5, CSS</li>
+          <li>JavaScript</li>
+          <li>English - A2. </li>
+        </ul>
+      </section>
+      <section class="section" id="Strengths"><!-- справа-->
+        <h2 class="section-title">Strengths</h2>
+        <ul class="key-strengths__list">
+          <li>Hardworking</li>
+          <li>Responsible</li>
+          <li>Goal-oriented</li>
+        </ul>
+      </section>
+      <section class="section" id="Code">
+        <h2 class="section-title">Code</h2>
+        <p>
+          <pre>String.prototype.toJadenCase = function () { 
+  return this.split(" ").map(function(word){
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  }).join(" ");
+}
+          </pre>
+        </p>
+      </section>
+      <section class="section" id="Projects">
+        <h2 class="section-title">Projects</h2>
+        <a href="https://github.com/StepanKuzmin1997/rsschool-cv/tree/rsschool-cv-html" target="_blank">
+          CV
+        </a>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <a class="footer__github" href="https://github.com/StepanKuzmin1997" target="_blank">
+      My GitHub
+    </a>
+    <p class="footer__year">2022-2023</p>
+    <a class="footer__rsschool" href="https://rs.school/js/" target="_blank">
+      <img src="assets/img/rs_school_js.svg" width="86" height="32" alt="RS School">
+    </a>
+  </footer>
+  </body>
 </html>
+
+
+
+
+
+
